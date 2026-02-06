@@ -1,0 +1,93 @@
+/* CSS Genérico para Currículo LaTeX → HTML */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  background: #2B2B2B;
+  margin: 0;
+  padding: 20px;
+  color: #4a3b2a;
+  line-height: 1.6;
+}
+
+/* Container principal */
+body > * {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #f4f3ee;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h1 {
+  color: #4a3b2a;
+  font-size: 2em;
+  text-align: center;
+  border-bottom: 3px solid #855931;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #855931;
+  font-size: 1.4em;
+  border-bottom: 2px solid #855931;
+  padding-bottom: 5px;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #4a3b2a;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+/* Parágrafos e texto */
+p {
+  color: #4a3b2a;
+  margin-bottom: 10px;
+}
+
+/* Links */
+a {
+  color: #855931;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Listas */
+ul, ol {
+  margin: 10px 0;
+  padding-left: 25px;
+}
+
+li {
+  color: #4a3b2a;
+  margin-bottom: 5px;
+}
+
+/* Itálico e negrito */
+em, i {
+  color: #855931;
+}
+
+strong, b {
+  color: #4a3b2a;
+}
+
+/* Tabelas (caso o LaTeX gere) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+}
+
+td, th {
+  padding: 8px;
+  color: #4a3b2a;
+}

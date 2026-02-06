@@ -1,0 +1,173 @@
+\documentclass[a4paper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\textheight=10in
+\pagestyle{empty}
+\raggedright
+\usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINIÇÕES PARA CURRÍCULO %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% FIM DAS DEFINIÇÕES %%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\vspace*{-40pt}
+
+% ==================INÍCIO====================
+
+%==== Perfil ====%
+\vspace*{-10pt}
+\begin{center}
+    {\Huge \scshape {Rafael Almeida Vasconcelos}}\\
+    Minas Gerais $\cdot$ rafael.4avv@gmail.com $\cdot$ +55 35 99777-0001 $\cdot$ \href{https://www.linkedin.com/in/rafael-almeida-vasconcelos-b14629235/}{\textcolor{blue}{https://www.linkedin.com/in/rafael-almeida-vasconcelos-b14629235/}}
+\end{center}
+
+% ------------------------------------------------
+% Habilidades
+
+\header{HABILIDADES}
+\begin{tabularx}{\textwidth}
+JavaScript | TypeScript | Go | Python | 
+Next.js | Angular | NestJS | Express | Django | 
+React Native | 
+SQL | PostgreSQL | MongoDB | 
+Git | GitHub | 
+Jest | Testes Unitários | 
+RabbitMQ | 
+Microsserviços | APIs REST | 
+Docker | Kubernetes | 
+Azure | 
+Machine Learning | Processamento de Imagens | 
+Clean Code | Arquitetura de Software | 
+Backend | Frontend | Full-Stack
+\\
+\end{tabularx}
+\vspace{2mm}
+
+%==== Formação ====%
+\header{FORMAÇÃO ACADÊMICA}
+\textbf{Centro Universitário das Faculdades Associadas de Ensino - Unifae}\hfill São João da Boa Vista, SP\\
+Bacharelado em Engenharia de Software \hfill Jan 2022 - Dez 2025\\
+\vspace{2mm}
+
+%==== Experiência ====%
+\header{EXPERIÊNCIA PROFISSIONAL}
+\vspace{1mm}
+
+%  Ab-Inbev
+\textbf{AB InBev} \hfill Lovaina, Bélgica\\
+\textit{Engenheiro Full-Stack} \hfill Out 2024 -- Jan 2026\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Atuei como programador terceirizado Back-End na equipe \textbf{UWAZI}, uma equipe global e de língua inglesa da AB InBev, participando do desenvolvimento de uma solução baseada em \textbf{blockchain}, em parceria com a \textbf{IBM}. Trabalhei com \textbf{Go} e \textbf{NestJS} no back-end, \textbf{Angular} no front-end, e bancos de dados \textbf{MongoDB} e \textbf{PostgreSQL}, utilizando infraestrutura em \textbf{Kubernetes} e \textbf{Azure} para garantir escalabilidade e alta disponibilidade.
+\end{itemize}
+
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Fui responsável pelo desenvolvimento de um \textbf{microsserviço em Python} voltado para \textbf{computer vision}, incluindo a criação do pipeline de processamento de imagens, treinamento e inferência de modelos de \textbf{machine learning} para reconhecimento de produtos, com exposição dos resultados via API e integração com microsserviços em \textbf{NestJS}. A solução foi implantada em \textbf{Azure}, com foco em \textbf{escalabilidade, monitoramento e alta disponibilidade}.
+\end{itemize}
+
+
+% ------------------------------------------------
+%  Vai Na Web
+
+\textbf{Vai na Web} \hfill Rio de Janeiro, Brasil\\
+\textit{Engenheiro de Software Back-End} \hfill Fev 2024 - Jan 2026\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Atuei como desenvolvedor Back-End, sendo responsável pela arquitetura, desenvolvimento e manutenção de um \textbf{sistema central de gestão educacional} desenvolvido em \textbf{Django Rest Framework (Python)}, que sustentava todo o ciclo de vida da escola.
+    
+    \item Desenvolvi e mantive APIs responsáveis pela \textbf{gestão completa de alunos, professores, turmas, aulas, matrículas e métricas educacionais}, garantindo consistência de dados e escalabilidade do sistema.
+    
+    \item Implementei comunicação assíncrona entre serviços utilizando \textbf{RabbitMQ}, otimizando fluxos de processamento, notificações e tarefas em background.
+    
+    \item Integrei serviços de armazenamento em nuvem utilizando \textbf{AWS S3} para upload e gerenciamento de arquivos e imagens dos alunos, garantindo segurança e disponibilidade.
+    
+    \item Gerenciei todo o ciclo de vida da aplicação, incluindo \textbf{levantamento de requisitos, modelagem de dados, testes, deploy e manutenção}, atuando diretamente nas decisões técnicas do projeto.
+
+    \item Desenvolvi e integrei soluções baseadas em \textbf{LLMs (Large Language Models)} para \textbf{correção automática e geração de feedback de atividades dos alunos}, auxiliando professores no processo avaliativo e aumentando a eficiência pedagógica.
+\end{itemize}
+
+
+% ------------------------------------------------
+%  NFEXP
+
+\textbf{NFEXP} \hfill Jacutinga, MG\\
+\textit{Engenheiro de Software Full Stack} \hfill Abr 2023 - Jan 2024\\
+\vspace{-1mm}
+\begin{itemize} \itemsep 1pt
+    \item Atuei como desenvolvedor Full-Stack no NFExp, um emissor de notas fiscais eletrônicas, desenvolvendo sistemas de fluxo de estoque, autenticação e emissão de NF-e.
+    
+    \item Desenvolvi o backend com \textbf{NestJS (TypeScript)} e o frontend com \textbf{Next.js}, garantindo integração e desempenho entre os sistemas.
+    
+    \item Implementei \textbf{rotinas em Python} para automação e processamento de dados fiscais, contribuindo para a otimização dos fluxos de emissão.
+    
+    \item Otimizei as rotas de emissão de notas fiscais, reduzindo o tempo de resposta em \textbf{150\%}.
+\end{itemize}
+
+
+% ------------------------------------------------
+% PROJETOS
+
+\header{PROJETOS}
+{\textbf{MageGPT}} {\sl React Native} \hfill 
+Aplicativo que visa utilizar inteligência artificial generativa para criar aventuras, itens e personagens de RPG.
+Participei das etapas de ideação, protótipo, desenvolvimento, testes e lançamento na Play Store. As tecnologias utilizadas foram: React Native, Expo, TypeScript, JavaScript e Firebase.
+
+\vspace*{2mm}
+
+\end{document}

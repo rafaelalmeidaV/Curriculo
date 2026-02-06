@@ -1,0 +1,22 @@
+---
+import fs from "fs";
+import "../styles/global.css";
+
+const resume = fs.readFileSync(
+  new URL("../generated/resume.html", import.meta.url),
+  "utf-8"
+);
+---
+
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Rafael Almeida | Currículo</title>
+  </head>
+
+  <body>
+    <main>
+      <article set:html={resume} />
+    </main>
+  </body>
+</html>
