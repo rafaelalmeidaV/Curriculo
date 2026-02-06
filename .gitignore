@@ -20,8 +20,5 @@ Thumbs.db
 .env
 .env.*
 
-# Build intermediário (se quiser manter o repo limpo)
-src/generated/
-
 # PDF gerado (se você for gerar depois)
 *.pdf
