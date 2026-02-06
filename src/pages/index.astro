@@ -1,11 +1,13 @@
 ---
 import fs from "fs";
-import "../styles/global.css";
+import path from "path";
 
-const resume = fs.readFileSync(
-  new URL("../generated/resume.html", import.meta.url),
-  "utf-8"
+const resumePath = path.resolve(
+  process.cwd(),
+  "src/generated/resume.html"
 );
+
+const resume = fs.readFileSync(resumePath, "utf-8");
 ---
 
 <html lang="pt-BR">
